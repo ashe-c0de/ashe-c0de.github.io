@@ -1,1 +1,32 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Redis on Ashe's Blog</title><link>https://ashe-c0de.github.io/tags/redis/</link><description>Recent content in Redis on Ashe's Blog</description><generator>Hugo -- 0.147.0</generator><language>en-us</language><lastBuildDate>Sun, 28 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://ashe-c0de.github.io/tags/redis/index.xml" rel="self" type="application/rss+xml"/><item><title>Hello Hugo</title><link>https://ashe-c0de.github.io/posts/redis-cluster/redis-cluster/</link><pubDate>Sun, 28 Apr 2024 00:00:00 +0000</pubDate><guid>https://ashe-c0de.github.io/posts/redis-cluster/redis-cluster/</guid><description>基于docker构建Redis Cluster</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Redis on Ashe's Blog</title><link>https://ashe-c0de.github.io/tags/redis/</link><description>Recent content in Redis on Ashe's Blog</description><generator>Hugo -- 0.147.0</generator><language>en-us</language><lastBuildDate>Sun, 28 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://ashe-c0de.github.io/tags/redis/index.xml" rel="self" type="application/rss+xml"/><item><title>基于docker构建Redis Cluster</title><link>https://ashe-c0de.github.io/posts/redis-cluster/redis-cluster/</link><pubDate>Sun, 28 Apr 2024 00:00:00 +0000</pubDate><guid>https://ashe-c0de.github.io/posts/redis-cluster/redis-cluster/</guid><description>&lt;h2 id="1-拉取-redis-镜像">1. 拉取 Redis 镜像&lt;/h2>
+&lt;p>使用以下命令拉取 Redis 6.2 版本镜像（选了一个较为稳定的版本）：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>docker pull redis:6.2
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="2创建配置文件">2、创建配置文件&lt;/h2>
+&lt;p>比如在服务器的用户目录下/home/w/（俺的服务器用户目录）&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>mkdir redis_cluster
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cd redis_cluster
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>mkdir bin
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>mkdir conf
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>mkdir data
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cd data
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>mkdir node-1
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>mkdir node-2
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>mkdir node-3
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>mkdir node-5
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>mkdir node-6
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>conf目录创建配置文件vim redis-node-1.conf ，依次6个文件redis-node-1.conf redis-node-2.conf redis-node-3.conf redis-node-4.conf redis-node-5.conf redis-node-6.conf&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>bind 0.0.0.0
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>protected-mode no
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cluster-enabled yes
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cluster-config-file nodes-7000.conf
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cluster-node-timeout &lt;span style="color:#ae81ff">5000&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cluster-announce-ip 192.168.1.6
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cluster-announce-port &lt;span style="color:#ae81ff">7000&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cluster-announce-bus-port &lt;span style="color:#ae81ff">17000&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>user r_user on &amp;gt;read123 ~* +@read ~* -@write ~* -@admin
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>user rw_user on &amp;gt;write123 ~* +@read ~* +@write ~* -@admin
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>user admin on &amp;gt;admin123 ~* &amp;amp;* +@all
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>user default off
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="3创建脚本">3、创建脚本&lt;/h2>
+&lt;p>创建初始化脚本 vim init_redis.sh&lt;/p></description></item></channel></rss>

@@ -150,11 +150,11 @@ user default off
 </span></span><span style=display:flex><span>  docker start redis-node-$i
 </span></span><span style=display:flex><span><span style=color:#66d9ef>done</span>
 </span></span></code></pre></div><p>查看集群状态信息</p><p>docker exec -it redis-node-1 redis-cli CLUSTER INFO</p><p>带密码版</p><p>docker exec -it redis-node-1 redis-cli -u redis://admin:admin123@localhost:6379 CLUSTER INFO
-<img alt=我的图片 loading=lazy src=./2835536-20250328192628118-1821613334.png></p><p>查看集群节点信息</p><p>docker exec -it redis-node-1 redis-cli CLUSTER NODES</p><p>docker exec -it redis-node-1 redis-cli -u redis://admin:admin123@localhost:6379 CLUSTER NODES
-<img alt=我的图片 loading=lazy src=./2835536-20250328192700191-264201604.png></p><p>最后通过客户端连接测试
-<img alt=我的图片 loading=lazy src=./2835536-20250328194856799-1527369004.png></p><p>后记：不得不说Redis Cluster集群还是很消耗CPU和带宽资源的，因为我的服务器是自己的旧笔记本搭建，启动后系统的CPU和网络资源负载很大（怪不得Redis应用一般独占一台服务器资源）
-<img alt=我的图片 loading=lazy src=./2835536-20250328195050292-2092932283.png>
-<img alt=我的图片 loading=lazy src=./2835536-20250328195137624-1727875628.png></p></div><footer class=post-footer><ul class=post-tags><li><a href=https://ashe-c0de.github.io/tags/redis/>Redis</a></li></ul><nav class=paginav><a class=next href=https://ashe-c0de.github.io/posts/hello-hugo/><span class=title>Next »</span><br><span>Hello Hugo</span></a></nav></footer></article></main><footer class=footer><span>&copy; 2025 <a href=https://ashe-c0de.github.io/>Ashe's Blog</a></span> ·
+<img alt=我的图片 loading=lazy src=../2835536-20250328192628118-1821613334.png></p><p>查看集群节点信息</p><p>docker exec -it redis-node-1 redis-cli CLUSTER NODES</p><p>docker exec -it redis-node-1 redis-cli -u redis://admin:admin123@localhost:6379 CLUSTER NODES
+<img alt=我的图片 loading=lazy src=../2835536-20250328192700191-264201604.png></p><p>最后通过客户端连接测试
+<img alt=我的图片 loading=lazy src=../2835536-20250328194856799-1527369004.png></p><p>后记：不得不说Redis Cluster集群还是很消耗CPU和带宽资源的，因为我的服务器是自己的旧笔记本搭建，启动后系统的CPU和网络资源负载很大（怪不得Redis应用一般独占一台服务器资源）
+<img alt=我的图片 loading=lazy src=../2835536-20250328195050292-2092932283.png>
+<img alt=我的图片 loading=lazy src=../2835536-20250328195137624-1727875628.png></p></div><footer class=post-footer><ul class=post-tags><li><a href=https://ashe-c0de.github.io/tags/redis/>Redis</a></li></ul><nav class=paginav><a class=next href=https://ashe-c0de.github.io/posts/hello-hugo/><span class=title>Next »</span><br><span>Hello Hugo</span></a></nav></footer></article></main><footer class=footer><span>&copy; 2025 <a href=https://ashe-c0de.github.io/>Ashe's Blog</a></span> ·
 <span>Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
         <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>

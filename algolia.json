@@ -1,0 +1,52 @@
+[
+    {
+        "layout": "page",
+        "uri": "about",
+        "content": "Ashe                             ashet qq com",
+        "objectID": "about"
+    },
+    {
+        "title": "Hello Hugo",
+        "uri": "posts/hello-hugo",
+        "content": "Hugo",
+        "objectID": "posts/hello-hugo",
+        "date": "2024-01-01T00:00:00.000Z",
+        "description": "This is my first post",
+        "categories": [
+            "随笔"
+        ],
+        "tags": [
+            "Hugo",
+            "示例"
+        ],
+        "featured": false,
+        "draft": false
+    },
+    {
+        "title": "基于docker构建Redis Cluster",
+        "uri": "posts/redis-cluster/redis-cluster",
+        "content": "1     Redis             Redis 6 2                     bash docker pull redis 6 2   2                     home w              bash mkdir redis_cluster cd redis_cluster mkdir bin mkdir conf mkdir data cd data mkdir node 1 mkdir node 2 mkdir node 3 mkdir node 5 mkdir node 6   conf        vim redis node 1 conf    6   redis node 1 conf redis node 2 conf redis node 3 conf redis node 4 conf redis node 5 conf redis node 6 conf  bash bind 0 0 0 0 protected mode no cluster enabled yes cluster config file nodes 7000 conf cluster node timeout 5000 cluster announce ip 192 168 1 6 cluster announce port 7000 cluster announce bus port 17000 user r_user  read123      read      write      admin user rw_user  write123      read      write      admin user admin  admin123         all user default off   3              vim init_redis sh  bash    bin bash echo  Creating Redis cluster       6 Redis    1  6   port    6999    i   container  redis node  i  config   home w redis conf redis node  i conf  data   home w redis data node  i  docker run  d   name  container    p  port 6379  p    port   10000   16379     net redis cluster    v  config  usr local etc redis redis conf    v  data  data    e TZ  Asia Shanghai      ulimit nofile 100000 100000   redis 6 2 redis server  usr local etc redis redis conf                  ne 0    echo  Failed start  container  exit 1 fi done        sleep 10         IP      IP nodes     1  6   ip   docker inspect  f    range NetworkSettings Networks     IPAddress    end    redis node  i  nodes    ip 6379   done echo  Nodes   nodes     Redis            docker exec  it redis node 1 redis cli  u redis   admin admin123 localhost 6379   cluster create  nodes   cluster replicas 1 echo  All Redis nodes running now  list running containers   docker ps   grep redis          vim stop_redis sh  bash    bin bash   redis cluster  1  6   docker stop redis node  i done            vim rm_redis sh  bash    bin bash  1  6   docker rm redis node  i done            vim start_redis sh  bash    bin bash  1  6   docker start redis node  i done            docker exec  it redis node 1 redis cli CLUSTER INFO      docker exec  it redis node 1 redis cli  u redis   admin admin123 localhost 6379 CLUSTER INFO          docker exec  it redis node 1 redis cli CLUSTER NODES docker exec  it redis node 1 redis cli  u redis   admin admin123 localhost 6379 CLUSTER NODES                    Redis Cluster       CPU                               CPU             Redis",
+        "objectID": "posts/redis-cluster/redis-cluster",
+        "date": "2024-04-28T00:00:00.000Z",
+        "categories": [
+            "Microservices"
+        ],
+        "tags": [
+            "redis"
+        ],
+        "featured": false,
+        "draft": false,
+        "showToc": true,
+        "tocOpen": true,
+        "layout": "sidebar"
+    },
+    {
+        "title": "🔍搜索",
+        "uri": "search",
+        "content": "",
+        "objectID": "search",
+        "layout": "search",
+        "summary": "search",
+        "placeholder": "支持搜索标题、内容、Tags等"
+    }
+]

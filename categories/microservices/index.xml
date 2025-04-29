@@ -1,4 +1,87 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Microservices on Ashe's Blog</title><link>https://ashe-c0de.github.io/categories/microservices/</link><description>Recent content in Microservices on Ashe's Blog</description><generator>Hugo -- 0.147.0</generator><language>en-us</language><lastBuildDate>Sun, 28 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://ashe-c0de.github.io/categories/microservices/index.xml" rel="self" type="application/rss+xml"/><item><title>基于docker构建Redis Cluster</title><link>https://ashe-c0de.github.io/posts/redis-cluster/redis-cluster/</link><pubDate>Sun, 28 Apr 2024 00:00:00 +0000</pubDate><guid>https://ashe-c0de.github.io/posts/redis-cluster/redis-cluster/</guid><description>&lt;h2 id="1-拉取-redis-镜像">1. 拉取 Redis 镜像&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Microservices on Ashe's Blog</title><link>https://ashe-c0de.github.io/categories/microservices/</link><description>Recent content in Microservices on Ashe's Blog</description><generator>Hugo -- 0.147.0</generator><language>en-us</language><lastBuildDate>Mon, 29 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://ashe-c0de.github.io/categories/microservices/index.xml" rel="self" type="application/rss+xml"/><item><title>什么是工作流</title><link>https://ashe-c0de.github.io/posts/workflow/workflow/</link><pubDate>Mon, 29 Apr 2024 00:00:00 +0000</pubDate><guid>https://ashe-c0de.github.io/posts/workflow/workflow/</guid><description>&lt;h2 id="1-核心定义">1. 核心定义&lt;/h2>
+&lt;p>&lt;strong>工作流&lt;/strong>是对目标实现过程的&lt;strong>效率化拆解&lt;/strong>与&lt;strong>有序组织&lt;/strong>，通过：&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>任务分解&lt;/strong>：将复杂行为拆解为简单任务单元&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>流程编排&lt;/strong>：建立任务间协作规则，逼近全局最优路径&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="2-两大设计哲学">2. 两大设计哲学&lt;/h2>
+&lt;h3 id="21-分而治之divide-and-conquer">2.1 分而治之（Divide and Conquer）&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>本质&lt;/strong>：将不可控的复杂任务拆解为可管理的子任务&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>映射示例&lt;/strong>：&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>生物系统：器官功能模块化分工&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>组织管理：企业岗位职能拆分&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>技术架构：微服务解耦设计&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="22-自动协调orchestration">2.2 自动协调（Orchestration）&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>本质&lt;/strong>：通过规则引擎驱动子任务按需流转&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>映射示例&lt;/strong>：&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>生理机制：器官间协同完成生命活动&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>业务流程：跨部门协作规则执行&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>技术实现：服务间调用链编排&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="3-拆分粒度控制原则">3. 拆分粒度控制原则&lt;/h2>
+&lt;h3 id="31-极端情况对比">3.1 极端情况对比&lt;/h3>
+&lt;p>| 拆分维度 | 典型场景 | 核心问题 |&lt;/p>
+&lt;p>|&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;|&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-|&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;|&lt;/p>
+&lt;p>| &lt;strong>过粗拆分&lt;/strong> | 一人手搓原子弹 | 无法并行，效率瓶颈 |&lt;/p>
+&lt;p>| &lt;strong>过细拆分&lt;/strong> | 百人烹制一道菜 | 沟通成本＞并行收益 |&lt;/p>
+&lt;h3 id="32-动态平衡策略">3.2 动态平衡策略&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>评估依据&lt;/strong>：&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>任务属性：复杂度、风险等级&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>执行单元：能力矩阵、负载阈值&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>系统约束：接口稳定性、依赖强度&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>调整机制&lt;/strong>：&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>粗粒度任务 → 垂直拆解为独立子任务&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>细粒度任务 → 横向合并为原子化模块&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="4-关键评估维度">4. 关键评估维度&lt;/h2>
+&lt;p>| 维度 | 核心关注点 | 评估方法 |&lt;/p>
+&lt;p>|&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;|&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-|&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;|&lt;/p>
+&lt;p>| &lt;strong>任务复杂度&lt;/strong> | 流程环节数量、分支路径、异常概率 | 任务分解树分析 |&lt;/p></description></item><item><title>基于docker构建Redis Cluster</title><link>https://ashe-c0de.github.io/posts/redis-cluster/redis-cluster/</link><pubDate>Sun, 28 Apr 2024 00:00:00 +0000</pubDate><guid>https://ashe-c0de.github.io/posts/redis-cluster/redis-cluster/</guid><description>&lt;h2 id="1-拉取-redis-镜像">1. 拉取 Redis 镜像&lt;/h2>
 &lt;p>使用以下命令拉取 Redis 6.2 版本镜像（选了一个较为稳定的版本）：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">

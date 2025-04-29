@@ -41,6 +41,21 @@
         "layout": "sidebar"
     },
     {
+        "title": "什么是工作流",
+        "uri": "posts/workflow/workflow",
+        "content": "1                                                                              2         2 1      Divide Conquer                                                                         2 2      Orchestration                                                                         3           3 1                                                                                                                                                                  3 2                                                                                                       4                                                                                                                                                                                                                                                                                         5",
+        "objectID": "posts/workflow/workflow",
+        "date": "2024-04-29T00:00:00.000Z",
+        "categories": [
+            "Microservices"
+        ],
+        "featured": false,
+        "draft": false,
+        "showToc": true,
+        "tocOpen": true,
+        "layout": "sidebar"
+    },
+    {
         "layout": "search",
         "uri": "search",
         "content": "",

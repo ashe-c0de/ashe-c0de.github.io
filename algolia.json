@@ -41,12 +41,10 @@
         "layout": "sidebar"
     },
     {
-        "title": "🔍搜索",
+        "layout": "search",
         "uri": "search",
         "content": "",
         "objectID": "search",
-        "layout": "search",
-        "summary": "search",
-        "placeholder": "支持搜索标题、内容、Tags等"
+        "placeholder": "Search into blogs, by Algolia"
     }
 ]

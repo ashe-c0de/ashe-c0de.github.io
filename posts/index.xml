@@ -1,4 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on Ashe's Blog</title><link>https://ashe-c0de.github.io/posts/</link><description>Recent content in Posts on Ashe's Blog</description><generator>Hugo -- 0.147.0</generator><language>en-us</language><lastBuildDate>Mon, 29 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://ashe-c0de.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>什么是工作流</title><link>https://ashe-c0de.github.io/posts/workflow/workflow/</link><pubDate>Mon, 29 Apr 2024 00:00:00 +0000</pubDate><guid>https://ashe-c0de.github.io/posts/workflow/workflow/</guid><description>&lt;h2 id="1-核心定义">1. 核心定义&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on Ashe's Blog</title><link>https://ashe-c0de.github.io/posts/</link><description>Recent content in Posts on Ashe's Blog</description><generator>Hugo -- 0.147.0</generator><language>en-us</language><lastBuildDate>Tue, 29 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://ashe-c0de.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>《阿尔弗雷德·普鲁弗洛克的情歌》节选</title><link>https://ashe-c0de.github.io/posts/test/</link><pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate><guid>https://ashe-c0de.github.io/posts/test/</guid><description>&lt;p>&lt;em>让我们走吧，穿过一些半裸露的街道，
+那里，长着孩子般高低的欲望，
+让我们走吧，在早晨的某些时刻，在廉价旅馆的房间里，
+在廉价旅馆的房间里，他们将继续咕哝着廉价雪茄的烟雾。
+让我们走吧，穿过一些半裸露的街道，
+那里，长着孩子般高低的欲望，
+让我们走吧，在早晨的某些时刻，在廉价旅馆的房间里，
+在廉价旅馆的房间里，他们将继续咕哝着廉价雪茄的烟雾。
+而最终，你的臂膊将抱得如此之紧，
+时光将显示出比劳动更糟糕的负担，
+而最终，你的臂膊将抱得如此之紧，
+时光将显示出比劳动更糟糕的负担。
+在这低沉的、柔和的、来自远处楼梯上的音乐声中，
+我觉得时间几乎停滞了。我绝对应该学习政治学。
+那么，让我们走吧，我准备好回答
+所有来自这个世界的问题，我准备好而且愿意
+根据我们狭隘的、保守的代码，服从你。
+但是在黄昏的房间里，在镜子前，
+我有两次机会，超过六十五次，
+永远地创造你。&lt;/em>&lt;/p></description></item><item><title>什么是工作流</title><link>https://ashe-c0de.github.io/posts/workflow/workflow/</link><pubDate>Mon, 29 Apr 2024 00:00:00 +0000</pubDate><guid>https://ashe-c0de.github.io/posts/workflow/workflow/</guid><description>&lt;h2 id="1-核心定义">1. 核心定义&lt;/h2>
 &lt;p>&lt;strong>工作流&lt;/strong>是对目标实现过程的&lt;strong>效率化拆解&lt;/strong>与&lt;strong>有序组织&lt;/strong>，通过：&lt;/p>
 &lt;ul>
 &lt;li>

@@ -1,4 +1,41 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on Ashe's Blog</title><link>https://ashe-c0de.github.io/posts/</link><description>Recent content in Posts on Ashe's Blog</description><generator>Hugo -- 0.147.0</generator><language>en-us</language><lastBuildDate>Tue, 29 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://ashe-c0de.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>《阿尔弗雷德·普鲁弗洛克的情歌》节选</title><link>https://ashe-c0de.github.io/posts/test/</link><pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate><guid>https://ashe-c0de.github.io/posts/test/</guid><description>&lt;p>&lt;em>Let us go then, you and I,&lt;/em>&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on Ashe's Blog</title><link>https://ashe-c0de.github.io/posts/</link><description>Recent content in Posts on Ashe's Blog</description><generator>Hugo -- 0.147.0</generator><language>en-us</language><lastBuildDate>Wed, 30 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://ashe-c0de.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Channels in Go</title><link>https://ashe-c0de.github.io/posts/channel/channels-in-go/</link><pubDate>Wed, 30 Apr 2025 00:00:00 +0000</pubDate><guid>https://ashe-c0de.github.io/posts/channel/channels-in-go/</guid><description>&lt;h2 id="1-core-concept">1. Core Concept&lt;/h2>
+&lt;p>Channels are the pipes that connect concurrent goroutines. A channel is a technique which allows to let one goroutine to send data to another goroutine.&lt;/p>
+&lt;p>&lt;img alt="pic" loading="lazy" src="../pic01.png">&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;span class="lnt">9
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Golang" data-lang="Golang">&lt;span class="line">&lt;span class="cl">&lt;span class="kd">func&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">messages&lt;/span> &lt;span class="o">:=&lt;/span> &lt;span class="nb">make&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kd">chan&lt;/span> &lt;span class="kt">string&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// poducer gorutine&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">go&lt;/span> &lt;span class="kd">func&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="nx">messages&lt;/span> &lt;span class="o">&amp;lt;-&lt;/span> &lt;span class="s">&amp;#34;ping&amp;#34;&lt;/span> &lt;span class="p">}()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// consumer gorutine | main gorutine&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">msg&lt;/span> &lt;span class="o">:=&lt;/span> &lt;span class="o">&amp;lt;-&lt;/span>&lt;span class="nx">messages&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">fmt&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">Println&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">msg&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">$ go run channels.go
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ping
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Think of goroutines as the &amp;ldquo;workers&amp;rdquo; and channels as the &amp;ldquo;communication lines&amp;rdquo; that allow these workers to coordinate and exchange information effectively.&lt;/p></description></item><item><title>《阿尔弗雷德·普鲁弗洛克的情歌》节选</title><link>https://ashe-c0de.github.io/posts/test/</link><pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate><guid>https://ashe-c0de.github.io/posts/test/</guid><description>&lt;p>&lt;em>Let us go then, you and I,&lt;/em>&lt;/p>
 &lt;p>&lt;em>When the evening is spread out against the sky&lt;/em>&lt;/p>
 &lt;p>&lt;em>Like a patient etherized upon a table;&lt;/em>&lt;/p>
 &lt;p>&lt;em>Let us go, through certain half-deserted streets,&lt;/em>&lt;/p>

@@ -62,7 +62,8 @@
             "draft"
         ],
         "featured": false,
-        "draft": false
+        "draft": false,
+        "comments": true
     },
     {
         "title": "什么是工作流",

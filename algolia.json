@@ -15,7 +15,8 @@
             "program"
         ],
         "featured": false,
-        "draft": false
+        "draft": false,
+        "comments": true
     },
     {
         "title": "Hello Hugo",

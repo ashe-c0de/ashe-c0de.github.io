@@ -78,7 +78,8 @@
         "draft": false,
         "showToc": true,
         "tocOpen": true,
-        "layout": "sidebar"
+        "layout": "sidebar",
+        "comments": true
     },
     {
         "layout": "search",

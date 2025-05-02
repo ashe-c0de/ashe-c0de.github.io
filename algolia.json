@@ -78,9 +78,6 @@
         ],
         "featured": false,
         "draft": false,
-        "showToc": true,
-        "tocOpen": true,
-        "layout": "sidebar",
         "comments": true
     },
     {

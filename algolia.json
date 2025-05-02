@@ -50,7 +50,8 @@
         "draft": false,
         "showToc": true,
         "tocOpen": true,
-        "layout": "sidebar"
+        "layout": "sidebar",
+        "comments": true
     },
     {
         "title": "《阿尔弗雷德·普鲁弗洛克的情歌》节选",

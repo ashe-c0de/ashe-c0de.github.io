@@ -38,7 +38,7 @@
 &lt;p>| &lt;strong>依赖强度&lt;/strong> | 同步/异步比例、超时阈值、回滚机制 | 依赖关系拓扑分析 |&lt;/p>
 &lt;hr>
 &lt;h2 id="4-流程设计思路">4. 流程设计思路&lt;/h2>
-&lt;p>&lt;img alt="我的图片" loading="lazy" src="../pic-2025-04-29_14-04-42.png">&lt;/p></description></item><item><title>基于docker构建Redis Cluster</title><link>https://ashe-c0de.github.io/posts/redis-cluster/redis-cluster/</link><pubDate>Sun, 28 Apr 2024 00:00:00 +0000</pubDate><guid>https://ashe-c0de.github.io/posts/redis-cluster/redis-cluster/</guid><description>&lt;h2 id="1-拉取-redis-镜像">1. 拉取 Redis 镜像&lt;/h2>
+&lt;p>&lt;img alt="pic" loading="lazy" src="../pic-2025-04-29_14-04-42.png">&lt;/p></description></item><item><title>基于docker构建Redis Cluster</title><link>https://ashe-c0de.github.io/posts/redis-cluster/redis-cluster/</link><pubDate>Sun, 28 Apr 2024 00:00:00 +0000</pubDate><guid>https://ashe-c0de.github.io/posts/redis-cluster/redis-cluster/</guid><description>&lt;h2 id="1-拉取-redis-镜像">1. 拉取 Redis 镜像&lt;/h2>
 &lt;p>使用以下命令拉取 Redis 6.2 版本镜像（选了一个较为稳定的版本）：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">

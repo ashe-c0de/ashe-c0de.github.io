@@ -10,3 +10,13 @@ body {
   font-family: 'MyCustomFont', sans-serif;
 }
 
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.contact-icons img {
+  height: 32px;
+}
+

@@ -69,6 +69,19 @@
     },
     {
         "title": "什么是工作流",
+        "uri": "posts/workflow",
+        "content": "1                                                                              2              Divide Conquer                      Orchestration                                                                                                                                                                                3                                                                                                                                                                                                                                                                                           4",
+        "objectID": "posts/workflow",
+        "date": "2024-04-29T00:00:00.000Z",
+        "categories": [
+            "Microservices"
+        ],
+        "featured": false,
+        "draft": false,
+        "comments": true
+    },
+    {
+        "title": "什么是工作流",
         "uri": "posts/workflow/workflow",
         "content": "1                                                                              2              Divide Conquer                      Orchestration                                                                                                                                                                                3                                                                                                                                                                                                                                                                                           4",
         "objectID": "posts/workflow/workflow",

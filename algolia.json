@@ -26,14 +26,14 @@
         "date": "2024-01-01T00:00:00.000Z",
         "description": "This is my first post",
         "categories": [
-            "随笔"
+            "draft"
         ],
         "tags": [
-            "Hugo",
-            "示例"
+            "Hugo"
         ],
         "featured": false,
-        "draft": false
+        "draft": false,
+        "comments": true
     },
     {
         "title": "基于docker构建Redis Cluster",

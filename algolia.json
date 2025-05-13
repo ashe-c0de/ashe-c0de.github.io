@@ -24,6 +24,7 @@
         "content": "Hugo",
         "objectID": "posts/hello-hugo",
         "date": "2024-01-01T00:00:00.000Z",
+        "image": "https://ashe.imgix.net/2025-05-14-pic.jpg",
         "description": "This is my first post",
         "categories": [
             "draft"

@@ -7,6 +7,19 @@
     },
     {
         "title": "Channels in Go",
+        "uri": "posts/channel/channel",
+        "content": "1  Core Concept Channels pipes connect concurrent goroutines  channel technique allows let one goroutine send data goroutine   Golang func main     messages    make chan string     producer goroutine go func     messages",
+        "objectID": "posts/channel/channel",
+        "date": "2025-04-30T00:00:00.000Z",
+        "categories": [
+            "program"
+        ],
+        "featured": false,
+        "draft": false,
+        "comments": true
+    },
+    {
+        "title": "Channels in Go",
         "uri": "posts/channel/Channels in Go",
         "content": "1  Core Concept Channels pipes connect concurrent goroutines  channel technique allows let one goroutine send data goroutine   Golang func main     messages    make chan string     producer goroutine go func     messages",
         "objectID": "posts/channel/Channels in Go",

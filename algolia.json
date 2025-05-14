@@ -6,23 +6,6 @@
         "objectID": "about"
     },
     {
-        "title": "This is about action",
-        "uri": "posts/2025-05-15-action",
-        "content": "Start now  start today  show up  put work  keep grinding",
-        "objectID": "posts/2025-05-15-action",
-        "date": "2025-05-15T00:00:00.000Z",
-        "author": "Ashe",
-        "description": "",
-        "categories": [
-            "diary"
-        ],
-        "featured": false,
-        "comments": true,
-        "images": [
-            "https://ashe.imgix.net/2015-05-15-p0.jpg"
-        ]
-    },
-    {
         "title": "Channels in Go",
         "uri": "posts/channel/channel",
         "content": "1  Core Concept Channels pipes connect concurrent goroutines  channel technique allows let one goroutine send data goroutine   Golang func main     messages    make chan string     producer goroutine go func     messages",

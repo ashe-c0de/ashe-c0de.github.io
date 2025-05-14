@@ -51,10 +51,9 @@
         "featured": false,
         "draft": false,
         "comments": true,
-        "cover": {
-            "image": "https://ashe.imgix.net/2025-05-14-pic.jpg",
-            "relative": false
-        }
+        "images": [
+            "https://ashe.imgix.net/2025-05-14-pic.jpg"
+        ]
     },
     {
         "title": "基于docker构建Redis Cluster",

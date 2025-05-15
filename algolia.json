@@ -7,23 +7,6 @@
     },
     {
         "title": "This is about action",
-        "uri": "posts/2025-05-15-act",
-        "content": "Start now  start today  show up  put work  keep grinding",
-        "objectID": "posts/2025-05-15-act",
-        "date": "2025-05-15T00:00:00.000Z",
-        "author": "Ashe",
-        "description": "",
-        "categories": [
-            "diary"
-        ],
-        "featured": false,
-        "comments": true,
-        "images": [
-            "https://ashe.imgix.net/2015-05-15-p0.jpg"
-        ]
-    },
-    {
-        "title": "This is about action",
         "uri": "posts/2025-05-16-act",
         "content": "Start now  start today  show up  put work  keep grinding",
         "objectID": "posts/2025-05-16-act",

@@ -16,10 +16,7 @@
             "diary"
         ],
         "featured": false,
-        "comments": true,
-        "images": [
-            "https://ashe.imgix.net/2015-05-15-p0.jpg"
-        ]
+        "comments": true
     },
     {
         "title": "Channels in Go",

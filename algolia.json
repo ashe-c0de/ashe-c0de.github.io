@@ -19,6 +19,19 @@
         "comments": true
     },
     {
+        "title": " 一屋不扫，何以扫天下？",
+        "uri": "posts/2025-05-31-sweep a room",
+        "content": "result    progress                      ambition                                                                                                                   ta                                            ta                                                                                                                                          president                                                                                                                                                                             progress       result                                                                         point                  KISS Keep Simple  Stupid                                  MVP Minimum Viable Product",
+        "objectID": "posts/2025-05-31-sweep a room",
+        "date": "2025-05-31T00:00:00.000Z",
+        "description": "",
+        "categories": [
+            "diary"
+        ],
+        "featured": false,
+        "comments": true
+    },
+    {
         "title": "Channels in Go",
         "uri": "posts/channel/channel",
         "content": "1  Core Concept Channels pipes connect concurrent goroutines  channel technique allows let one goroutine send data goroutine   Golang func main     messages    make chan string     producer goroutine go func     messages",

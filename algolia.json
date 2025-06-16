@@ -32,6 +32,19 @@
         "comments": true
     },
     {
+        "title": "人类在模仿什么",
+        "uri": "posts/2025-06-16-The hymn of humanity is the hymn of courage",
+        "content": "",
+        "objectID": "posts/2025-06-16-The hymn of humanity is the hymn of courage",
+        "date": "2025-06-16T00:00:00.000Z",
+        "description": "",
+        "categories": [
+            "diary"
+        ],
+        "featured": false,
+        "comments": true
+    },
+    {
         "title": "Channels in Go",
         "uri": "posts/channel/channel",
         "content": "1  Core Concept Channels pipes connect concurrent goroutines  channel technique allows let one goroutine send data goroutine   Golang func main     messages    make chan string     producer goroutine go func     messages",

@@ -45,6 +45,19 @@
         "comments": true
     },
     {
+        "title": "人类在模仿什么",
+        "uri": "posts/content/posts/2025-06-16-The hymn of humanity is the hymn of courage",
+        "content": "",
+        "objectID": "posts/content/posts/2025-06-16-The hymn of humanity is the hymn of courage",
+        "date": "2025-06-16T00:00:00.000Z",
+        "description": "",
+        "categories": [
+            "diary"
+        ],
+        "featured": false,
+        "comments": true
+    },
+    {
         "title": "Hello Hugo",
         "uri": "posts/hello-hugo",
         "content": "Hugo",

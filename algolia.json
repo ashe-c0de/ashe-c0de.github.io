@@ -71,6 +71,19 @@
         "comments": true
     },
     {
+        "title": "剥削",
+        "uri": "posts/2025/2025-11-28-exploit",
+        "content": "",
+        "objectID": "posts/2025/2025-11-28-exploit",
+        "date": "2025-11-28T00:00:00.000Z",
+        "description": "",
+        "categories": [
+            "diary"
+        ],
+        "featured": false,
+        "comments": true
+    },
+    {
         "title": "Channels in Go",
         "uri": "posts/channel/channel",
         "content": "1  Core Concept Channels pipes connect concurrent goroutines  channel technique allows let one goroutine send data goroutine   Golang func main     messages    make chan string     producer goroutine go func     messages",

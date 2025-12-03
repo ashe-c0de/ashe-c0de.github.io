@@ -58,6 +58,19 @@
         "comments": true
     },
     {
+        "title": "剥削",
+        "uri": "posts/2025-11-28-exploit",
+        "content": "Existence precedes essence",
+        "objectID": "posts/2025-11-28-exploit",
+        "date": "2025-11-28T00:00:00.000Z",
+        "description": "",
+        "categories": [
+            "diary"
+        ],
+        "featured": false,
+        "comments": true
+    },
+    {
         "title": "<<Close-Up>>",
         "uri": "posts/2025-11-29-close-up",
         "content": "cinema about  Real  heartfelt  emotional  poetic",
@@ -107,19 +120,6 @@
         ],
         "featured": false,
         "draft": false,
-        "comments": true
-    },
-    {
-        "title": "剥削",
-        "uri": "posts/exploit",
-        "content": "Existence precedes essence",
-        "objectID": "posts/exploit",
-        "date": "2025-11-28T00:00:00.000Z",
-        "description": "",
-        "categories": [
-            "diary"
-        ],
-        "featured": false,
         "comments": true
     },
     {

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Microservices on Ashe's Blog</title><link>https://ashe-c0de.github.io/categories/microservices/</link><description>Recent content in Microservices on Ashe's Blog</description><generator>Hugo -- 0.152.2</generator><language>en-us</language><lastBuildDate>Mon, 29 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://ashe-c0de.github.io/categories/microservices/index.xml" rel="self" type="application/rss+xml"/><item><title>什么是工作流</title><link>https://ashe-c0de.github.io/posts/workflow/workflow/</link><pubDate>Mon, 29 Apr 2024 00:00:00 +0000</pubDate><guid>https://ashe-c0de.github.io/posts/workflow/workflow/</guid><description>&lt;h2 id="1-核心定义"&gt;1. 核心定义&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Microservices on</title><link>https://ashe-c0de.github.io/categories/microservices/</link><description>Recent content in Microservices on</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 29 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://ashe-c0de.github.io/categories/microservices/index.xml" rel="self" type="application/rss+xml"/><item><title>什么是工作流</title><link>https://ashe-c0de.github.io/docs/program/workflow/</link><pubDate>Mon, 29 Apr 2024 00:00:00 +0000</pubDate><guid>https://ashe-c0de.github.io/docs/program/workflow/</guid><description>&lt;h2 id="1-核心定义"&gt;1. 核心定义&lt;a class="anchor" href="#1-%e6%a0%b8%e5%bf%83%e5%ae%9a%e4%b9%89"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;工作流&lt;/strong&gt;是对目标实现过程的&lt;strong&gt;效率化拆解&lt;/strong&gt;与&lt;strong&gt;有序组织&lt;/strong&gt;，通过：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -9,7 +9,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h2 id="2-两大设计哲学"&gt;2. 两大设计哲学&lt;/h2&gt;
+&lt;h2 id="2-两大设计哲学"&gt;2. 两大设计哲学&lt;a class="anchor" href="#2-%e4%b8%a4%e5%a4%a7%e8%ae%be%e8%ae%a1%e5%93%b2%e5%ad%a6"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;分而治之（Divide and Conquer）&lt;/strong&gt;&lt;/p&gt;
@@ -29,7 +29,7 @@
 &lt;p&gt;从微服务架构来看，微服务解耦即为拆分，服务间互相调用就是组合。&lt;/p&gt;
 &lt;p&gt;让一个人手搓原子弹，让一百个人做一道菜，都是荒唐之举，拆分过粗，无法形成并行；拆分过细，则会引入不必要的沟通成本和冗余的资源调度。&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id="3-拆分粒度控制原则"&gt;3. 拆分粒度控制原则&lt;/h2&gt;
+&lt;h2 id="3-拆分粒度控制原则"&gt;3. 拆分粒度控制原则&lt;a class="anchor" href="#3-%e6%8b%86%e5%88%86%e7%b2%92%e5%ba%a6%e6%8e%a7%e5%88%b6%e5%8e%9f%e5%88%99"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;| 维度 | 核心关注点 | 评估方法 |&lt;/p&gt;
 &lt;p&gt;|&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;|&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-|&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;|&lt;/p&gt;
 &lt;p&gt;| &lt;strong&gt;任务复杂度&lt;/strong&gt; | 流程环节数量、分支路径、异常概率 | 任务分解树分析 |&lt;/p&gt;
@@ -37,79 +37,33 @@
 &lt;p&gt;| &lt;strong&gt;接口稳定性&lt;/strong&gt; | 协议一致性、数据格式、调用频率 | 接口兼容性测试 |&lt;/p&gt;
 &lt;p&gt;| &lt;strong&gt;依赖强度&lt;/strong&gt; | 同步/异步比例、超时阈值、回滚机制 | 依赖关系拓扑分析 |&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id="4-流程设计思路"&gt;4. 流程设计思路&lt;/h2&gt;
-&lt;p&gt;&lt;img alt="pic" loading="lazy" src="../pic-2025-04-29_14-04-42.png"&gt;&lt;/p&gt;</description></item><item><title>基于docker构建Redis Cluster</title><link>https://ashe-c0de.github.io/posts/redis-cluster/redis-cluster/</link><pubDate>Sun, 28 Apr 2024 00:00:00 +0000</pubDate><guid>https://ashe-c0de.github.io/posts/redis-cluster/redis-cluster/</guid><description>&lt;h2 id="1-拉取-redis-镜像"&gt;1. 拉取 Redis 镜像&lt;/h2&gt;
+&lt;h2 id="4-流程设计思路"&gt;4. 流程设计思路&lt;a class="anchor" href="#4-%e6%b5%81%e7%a8%8b%e8%ae%be%e8%ae%a1%e6%80%9d%e8%b7%af"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img src="../pic-2025-04-29_14-04-42.png" alt="pic" /&gt;&lt;/p&gt;</description></item><item><title>基于docker构建Redis Cluster</title><link>https://ashe-c0de.github.io/docs/program/redis-cluster/</link><pubDate>Sun, 28 Apr 2024 00:00:00 +0000</pubDate><guid>https://ashe-c0de.github.io/docs/program/redis-cluster/</guid><description>&lt;h2 id="1-拉取-redis-镜像"&gt;1. 拉取 Redis 镜像&lt;a class="anchor" href="#1-%e6%8b%89%e5%8f%96-redis-%e9%95%9c%e5%83%8f"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;使用以下命令拉取 Redis 6.2 版本镜像（选了一个较为稳定的版本）：&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
-&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
-&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class="lntd"&gt;
-&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;docker pull redis:6.2
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h2 id="2创建配置文件"&gt;2、创建配置文件&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker pull redis:6.2&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="2创建配置文件"&gt;2、创建配置文件&lt;a class="anchor" href="#2%e5%88%9b%e5%bb%ba%e9%85%8d%e7%bd%ae%e6%96%87%e4%bb%b6"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;比如在服务器的用户目录下/home/w/（俺的服务器用户目录）&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
-&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
-&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
-&lt;/span&gt;&lt;span class="lnt"&gt; 2
-&lt;/span&gt;&lt;span class="lnt"&gt; 3
-&lt;/span&gt;&lt;span class="lnt"&gt; 4
-&lt;/span&gt;&lt;span class="lnt"&gt; 5
-&lt;/span&gt;&lt;span class="lnt"&gt; 6
-&lt;/span&gt;&lt;span class="lnt"&gt; 7
-&lt;/span&gt;&lt;span class="lnt"&gt; 8
-&lt;/span&gt;&lt;span class="lnt"&gt; 9
-&lt;/span&gt;&lt;span class="lnt"&gt;10
-&lt;/span&gt;&lt;span class="lnt"&gt;11
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class="lntd"&gt;
-&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;mkdir redis_cluster
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; redis_cluster
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;mkdir bin
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;mkdir conf
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;mkdir data
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; data
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;mkdir node-1
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;mkdir node-2
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;mkdir node-3
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;mkdir node-5
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;mkdir node-6
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;conf目录创建配置文件vim redis-node-1.conf ，依次6个文件redis-node-1.conf redis-node-2.conf redis-node-3.conf redis-node-4.conf redis-node-5.conf redis-node-6.conf&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
-&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
-&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
-&lt;/span&gt;&lt;span class="lnt"&gt; 2
-&lt;/span&gt;&lt;span class="lnt"&gt; 3
-&lt;/span&gt;&lt;span class="lnt"&gt; 4
-&lt;/span&gt;&lt;span class="lnt"&gt; 5
-&lt;/span&gt;&lt;span class="lnt"&gt; 6
-&lt;/span&gt;&lt;span class="lnt"&gt; 7
-&lt;/span&gt;&lt;span class="lnt"&gt; 8
-&lt;/span&gt;&lt;span class="lnt"&gt; 9
-&lt;/span&gt;&lt;span class="lnt"&gt;10
-&lt;/span&gt;&lt;span class="lnt"&gt;11
-&lt;/span&gt;&lt;span class="lnt"&gt;12
-&lt;/span&gt;&lt;span class="lnt"&gt;13
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class="lntd"&gt;
-&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;bind&lt;/span&gt; 0.0.0.0
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;protected-mode no
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;cluster-enabled yes
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;cluster-config-file nodes-7000.conf
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;cluster-node-timeout &lt;span class="m"&gt;5000&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;cluster-announce-ip 192.168.1.6
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;cluster-announce-port &lt;span class="m"&gt;7000&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;cluster-announce-bus-port &lt;span class="m"&gt;17000&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;user r_user on &amp;gt;read123 ~* +@read ~* -@write ~* -@admin
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;user rw_user on &amp;gt;write123 ~* +@read ~* +@write ~* -@admin
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;user admin on &amp;gt;admin123 ~* &lt;span class="p"&gt;&amp;amp;&lt;/span&gt;* +@all
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;user default off
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h2 id="3创建脚本"&gt;3、创建脚本&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;mkdir redis_cluster
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cd redis_cluster
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;mkdir bin
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;mkdir conf
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;mkdir data
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cd data
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;mkdir node-1
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;mkdir node-2
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;mkdir node-3
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;mkdir node-5
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;mkdir node-6&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;conf目录创建配置文件vim redis-node-1.conf ，依次6个文件redis-node-1.conf redis-node-2.conf redis-node-3.conf redis-node-4.conf redis-node-5.conf redis-node-6.conf&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;bind 0.0.0.0
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;protected-mode no
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cluster-enabled yes
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cluster-config-file nodes-7000.conf
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cluster-node-timeout &lt;span style="color:#ae81ff"&gt;5000&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cluster-announce-ip 192.168.1.6
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cluster-announce-port &lt;span style="color:#ae81ff"&gt;7000&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cluster-announce-bus-port &lt;span style="color:#ae81ff"&gt;17000&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;user r_user on &amp;gt;read123 ~* +@read ~* -@write ~* -@admin
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;user rw_user on &amp;gt;write123 ~* +@read ~* +@write ~* -@admin
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;user admin on &amp;gt;admin123 ~* &amp;amp;* +@all
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;user default off&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="3创建脚本"&gt;3、创建脚本&lt;a class="anchor" href="#3%e5%88%9b%e5%bb%ba%e8%84%9a%e6%9c%ac"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;创建初始化脚本 vim init_redis.sh&lt;/p&gt;</description></item></channel></rss>

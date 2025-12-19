@@ -1,31 +1,15 @@
 [
     {
-        "title": "^_^",
-        "uri": "",
-        "content": "Honestly Expressing Yourself",
-        "objectID": "",
-        "bookFlatSection": true
-    },
-    {
-        "title": "博客",
-        "uri": "docs",
-        "content": "",
-        "objectID": "docs",
-        "weight": 1
-    },
-    {
-        "title": "meditation",
-        "uri": "docs/meditation",
-        "content": "",
-        "objectID": "docs/meditation",
-        "bookCollapseSection": true,
-        "weight": 1
+        "layout": "page",
+        "uri": "about",
+        "content": "Ashe",
+        "objectID": "about"
     },
     {
         "title": "This is about action",
-        "uri": "docs/meditation/2025-05-17-act",
+        "uri": "posts/2025-05-17-act",
         "content": "Start now  start today  show up  put work  keep grinding",
-        "objectID": "docs/meditation/2025-05-17-act",
+        "objectID": "posts/2025-05-17-act",
         "date": "2025-05-15T00:00:00.000Z",
         "description": "",
         "categories": [
@@ -36,9 +20,9 @@
     },
     {
         "title": " 一屋不扫，何以扫天下？",
-        "uri": "docs/meditation/2025-05-31-sweep",
+        "uri": "posts/2025-05-31-sweep a room",
         "content": "result    progress                      ambition                                                                                                                   ta                                            ta                                                                                                                                          president                                                                                                                                                                                 progress       result                                                                         point                  KISS Keep Simple  Stupid                                  MVP Minimum Viable Product",
-        "objectID": "docs/meditation/2025-05-31-sweep",
+        "objectID": "posts/2025-05-31-sweep a room",
         "date": "2025-05-31T00:00:00.000Z",
         "description": "",
         "categories": [
@@ -49,9 +33,9 @@
     },
     {
         "title": "人类在模仿什么",
-        "uri": "docs/meditation/2025-06-16-the-hymn-of-courage",
+        "uri": "posts/2025-06-16-The hymn of humanity is the hymn of courage",
         "content": "",
-        "objectID": "docs/meditation/2025-06-16-the-hymn-of-courage",
+        "objectID": "posts/2025-06-16-The hymn of humanity is the hymn of courage",
         "date": "2025-06-16T00:00:00.000Z",
         "description": "",
         "categories": [
@@ -61,23 +45,23 @@
         "comments": true
     },
     {
-        "title": "不安",
-        "uri": "docs/meditation/2025-11-1-fear",
-        "content": "A                                      C                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        vs                                                                                                                                                                                                                                                                                              A                                                       C                                                                               1     vs                                                                                                                                                             2                                                                                                                              3                                                                                                           4                                                       jump scare                                                   5                                                                                                                    6                                    catharsis                                                        7                                                            trigger warning                                                                                                                                                                                                                                                                                                                     vs                                                                                                                               A                                                                                                                  C                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 sensation seeking                                                                                                                                                                                                         A                                                                                                                                                                                                                C                                                                                    1                                                                                                                                                                                                                                       edge safety                                2                                                                                                                                                                                    3                                                                                                                                                                                                                                                                                                                                                      A                                                                                 C                                              sensation seekers                                                                                                                                                                                                                                ",
-        "objectID": "docs/meditation/2025-11-1-fear",
-        "date": "2025-11-01T00:00:00.000Z",
+        "title": "健康省钱食谱推荐（针对视力+大脑）",
+        "uri": "posts/2025-11-15-food",
+        "content": "B                                                             B12 Omega 3                                                A    C                                             D    E Omega 3                     C                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            20 3g 100g     B         16 20g 100g                      20g 100g                19g 100g                    17 20g 100g     DHA EPA                                      2 4g 100g                                             Omega 3 EPA DHA                                                                                                                                                                                          B                                  A                                                                    C",
+        "objectID": "posts/2025-11-15-food",
+        "date": "2025-11-15T00:00:00.000Z",
         "description": "",
-        "categories": [
-            "diary"
+        "tags": [
+            "life"
         ],
         "featured": false,
         "comments": true
     },
     {
         "title": "剥削",
-        "uri": "docs/meditation/2025-11-28-exploit",
+        "uri": "posts/2025-11-28-exploit",
         "content": "Existence precedes essence",
-        "objectID": "docs/meditation/2025-11-28-exploit",
+        "objectID": "posts/2025-11-28-exploit",
         "date": "2025-11-28T00:00:00.000Z",
         "description": "",
         "categories": [
@@ -88,9 +72,9 @@
     },
     {
         "title": "<<Close-Up>>",
-        "uri": "docs/meditation/2025-11-29-close-up",
+        "uri": "posts/2025-11-29-close-up",
         "content": "cinema about  Real  heartfelt  emotional  poetic",
-        "objectID": "docs/meditation/2025-11-29-close-up",
+        "objectID": "posts/2025-11-29-close-up",
         "date": "2025-11-29T00:00:00.000Z",
         "description": "",
         "categories": [
@@ -100,44 +84,10 @@
         "comments": true
     },
     {
-        "title": "时代隔阂",
-        "uri": "docs/meditation/2025-12-12-barrier",
-        "content": "Hippies                Sapeurs",
-        "objectID": "docs/meditation/2025-12-12-barrier",
-        "date": "2025-12-12T00:00:00.000Z",
-        "description": "",
-        "categories": [
-            "diary"
-        ],
-        "featured": false,
-        "comments": true
-    },
-    {
-        "title": "other",
-        "uri": "docs/other",
-        "content": "",
-        "objectID": "docs/other",
-        "bookCollapseSection": true,
-        "weight": 5
-    },
-    {
-        "title": "健康省钱食谱推荐（针对视力+大脑）",
-        "uri": "docs/other/2025-11-15-food",
-        "content": "B                                                             B12 Omega 3                                                A    C                                             D    E Omega 3                     C                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            20 3g 100g     B         16 20g 100g                      20g 100g                19g 100g                    17 20g 100g     DHA EPA                                      2 4g 100g                                             Omega 3 EPA DHA                                                                                                                                                                                          B                                  A                                                                    C",
-        "objectID": "docs/other/2025-11-15-food",
-        "date": "2025-11-15T00:00:00.000Z",
-        "description": "",
-        "tags": [
-            "life"
-        ],
-        "featured": false,
-        "comments": true
-    },
-    {
         "title": "The shortcut of duolingo",
-        "uri": "docs/other/2025-12-03-duolingo-shortcut",
+        "uri": "posts/2025-12-03-duolingo-shortcut",
         "content": "action   windows   mac                   replay   CTRL   SPACE   COMMAND   SPACE     skip   TAB   TAB     submit   ENTER   ENTER",
-        "objectID": "docs/other/2025-12-03-duolingo-shortcut",
+        "objectID": "posts/2025-12-03-duolingo-shortcut",
         "date": "2025-12-03T00:00:00.000Z",
         "description": "",
         "tags": [
@@ -147,13 +97,39 @@
         "comments": true
     },
     {
-        "title": "《阿尔弗雷德·普鲁弗洛克的情歌》节选",
-        "uri": "docs/other/Eliot",
-        "content": "Let us go then  I  When evening spread against sky patient etherized upon table  Let us go  certain half deserted streets  muttering retreats restless nights one night cheap hotels sawdust restaurants oyster shells  Streets follow tedious argument insidious intent lead overwhelming question   Oh  not ask   What it   Let us go visit  room women go Talking Michelangelo  yellow fog rubs its back upon window panes  yellow smoke rubs its muzzle window panes  Licked its tongue corners evening  Lingered upon pools stand drains  Let fall upon its back soot falls chimneys  Slipped terrace  made sudden leap  seeing soft October night  Curled once house  fell asleep  indeed will time yellow smoke slides along street  Rubbing its back upon window panes  will time  will time prepare face meet faces meet  will time murder create  time works days hands lift drop question plate  Time time me  time yet hundred indecisions  hundred visions revisions  taking toast tea  room women go Talking Michelangelo       T  S  Eliot",
-        "objectID": "docs/other/Eliot",
-        "date": "2025-04-29T00:00:00.000Z",
+        "title": "时代隔阂",
+        "uri": "posts/2025-12-12-barrier",
+        "content": "Hippies                Sapeurs",
+        "objectID": "posts/2025-12-12-barrier",
+        "date": "2025-12-12T00:00:00.000Z",
+        "description": "",
         "categories": [
-            "draft"
+            "diary"
+        ],
+        "featured": false,
+        "comments": true
+    },
+    {
+        "title": "不安",
+        "uri": "posts/2025/2025-11-1-fear",
+        "content": "A                                      C                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        vs                                                                                                                                                                                                                                                                                              A                                                       C                                                                               1     vs                                                                                                                                                             2                                                                                                                              3                                                                                                           4                                                       jump scare                                                   5                                                                                                                    6                                    catharsis                                                        7                                                            trigger warning                                                                                                                                                                                                                                                                                                                     vs                                                                                                                               A                                                                                                                  C                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 sensation seeking                                                                                                                                                                                                         A                                                                                                                                                                                                                C                                                                                    1                                                                                                                                                                                                                                       edge safety                                2                                                                                                                                                                                    3                                                                                                                                                                                                                                                                                                                                                      A                                                                                 C                                              sensation seekers                                                                                                                                                                                                                                ",
+        "objectID": "posts/2025/2025-11-1-fear",
+        "date": "2025-11-01T00:00:00.000Z",
+        "description": "",
+        "categories": [
+            "diary"
+        ],
+        "featured": false,
+        "comments": true
+    },
+    {
+        "title": "Channels in Go",
+        "uri": "posts/channel/channel",
+        "content": "1  Core Concept Channels pipes connect concurrent goroutines  channel technique allows let one goroutine send data goroutine   Golang func main     messages    make chan string     producer goroutine go func     messages",
+        "objectID": "posts/channel/channel",
+        "date": "2025-04-30T00:00:00.000Z",
+        "categories": [
+            "program"
         ],
         "featured": false,
         "draft": false,
@@ -161,9 +137,9 @@
     },
     {
         "title": "Hello Hugo",
-        "uri": "docs/other/hello-hugo",
+        "uri": "posts/hello-hugo",
         "content": "Hugo",
-        "objectID": "docs/other/hello-hugo",
+        "objectID": "posts/hello-hugo",
         "date": "2024-01-01T00:00:00.000Z",
         "description": "This is my first post",
         "categories": [
@@ -180,31 +156,10 @@
         ]
     },
     {
-        "title": "program",
-        "uri": "docs/program",
-        "content": "",
-        "objectID": "docs/program",
-        "bookCollapseSection": true,
-        "weight": 3
-    },
-    {
-        "title": "Channels in Go",
-        "uri": "docs/program/channel",
-        "content": "1  Core Concept Channels pipes connect concurrent goroutines  channel technique allows let one goroutine send data goroutine   Golang func main     messages    make chan string     producer goroutine go func     messages",
-        "objectID": "docs/program/channel",
-        "date": "2025-04-30T00:00:00.000Z",
-        "categories": [
-            "program"
-        ],
-        "featured": false,
-        "draft": false,
-        "comments": true
-    },
-    {
         "title": "基于docker构建Redis Cluster",
-        "uri": "docs/program/redis-cluster",
+        "uri": "posts/redis-cluster/redis-cluster",
         "content": "1     Redis             Redis 6 2                     bash docker pull redis 6 2   2                     home w              bash mkdir redis_cluster cd redis_cluster mkdir bin mkdir conf mkdir data cd data mkdir node 1 mkdir node 2 mkdir node 3 mkdir node 5 mkdir node 6   conf        vim redis node 1 conf    6   redis node 1 conf redis node 2 conf redis node 3 conf redis node 4 conf redis node 5 conf redis node 6 conf  bash bind 0 0 0 0 protected mode no cluster enabled yes cluster config file nodes 7000 conf cluster node timeout 5000 cluster announce ip 192 168 1 6 cluster announce port 7000 cluster announce bus port 17000 user r_user  read123      read      write      admin user rw_user  write123      read      write      admin user admin  admin123         all user default off   3              vim init_redis sh  bash    bin bash echo  Creating Redis cluster       6 Redis    1  6   port    6999    i   container  redis node  i  config   home w redis conf redis node  i conf  data   home w redis data node  i  docker run  d   name  container    p  port 6379  p    port   10000   16379     net redis cluster    v  config  usr local etc redis redis conf    v  data  data    e TZ  Asia Shanghai      ulimit nofile 100000 100000   redis 6 2 redis server  usr local etc redis redis conf                  ne 0    echo  Failed start  container  exit 1 fi done        sleep 10         IP      IP nodes     1  6   ip   docker inspect  f    range NetworkSettings Networks     IPAddress    end    redis node  i  nodes    ip 6379   done echo  Nodes   nodes     Redis            docker exec  it redis node 1 redis cli  u redis   admin admin123 localhost 6379   cluster create  nodes   cluster replicas 1 echo  All Redis nodes running now  list running containers   docker ps   grep redis          vim stop_redis sh  bash    bin bash   redis cluster  1  6   docker stop redis node  i done            vim rm_redis sh  bash    bin bash  1  6   docker rm redis node  i done            vim start_redis sh  bash    bin bash  1  6   docker start redis node  i done            docker exec  it redis node 1 redis cli CLUSTER INFO      docker exec  it redis node 1 redis cli  u redis   admin admin123 localhost 6379 CLUSTER INFO          docker exec  it redis node 1 redis cli CLUSTER NODES docker exec  it redis node 1 redis cli  u redis   admin admin123 localhost 6379 CLUSTER NODES                    Redis Cluster       CPU                               CPU             Redis",
-        "objectID": "docs/program/redis-cluster",
+        "objectID": "posts/redis-cluster/redis-cluster",
         "date": "2024-04-28T00:00:00.000Z",
         "categories": [
             "Microservices"
@@ -220,10 +175,23 @@
         "comments": true
     },
     {
+        "title": "《阿尔弗雷德·普鲁弗洛克的情歌》节选",
+        "uri": "posts/test",
+        "content": "Let us go then  I  When evening spread against sky patient etherized upon table  Let us go  certain half deserted streets  muttering retreats restless nights one night cheap hotels sawdust restaurants oyster shells  Streets follow tedious argument insidious intent lead overwhelming question   Oh  not ask   What it   Let us go visit  room women go Talking Michelangelo  yellow fog rubs its back upon window panes  yellow smoke rubs its muzzle window panes  Licked its tongue corners evening  Lingered upon pools stand drains  Let fall upon its back soot falls chimneys  Slipped terrace  made sudden leap  seeing soft October night  Curled once house  fell asleep  indeed will time yellow smoke slides along street  Rubbing its back upon window panes  will time  will time prepare face meet faces meet  will time murder create  time works days hands lift drop question plate  Time time me  time yet hundred indecisions  hundred visions revisions  taking toast tea  room women go Talking Michelangelo       T  S  Eliot",
+        "objectID": "posts/test",
+        "date": "2025-04-29T00:00:00.000Z",
+        "categories": [
+            "draft"
+        ],
+        "featured": false,
+        "draft": false,
+        "comments": true
+    },
+    {
         "title": "什么是工作流",
-        "uri": "docs/program/workflow",
-        "content": "1                                                                              2              Divide Conquer                      Orchestration                                                                                                                                                                                3                                                                                                                                                                                                                                                                                 4",
-        "objectID": "docs/program/workflow",
+        "uri": "posts/workflow/workflow",
+        "content": "1                                                                              2              Divide Conquer                      Orchestration                                                                                                                                                                                3                                                                                                                                                                                                                                                                                           4",
+        "objectID": "posts/workflow/workflow",
         "date": "2024-04-29T00:00:00.000Z",
         "categories": [
             "Microservices"
@@ -231,5 +199,12 @@
         "featured": false,
         "draft": false,
         "comments": true
+    },
+    {
+        "layout": "search",
+        "uri": "search",
+        "content": "",
+        "objectID": "search",
+        "placeholder": "Search into blogs, by Algolia"
     }
 ]

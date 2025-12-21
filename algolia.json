@@ -136,24 +136,18 @@
         "comments": true
     },
     {
-        "title": "Hello Hugo",
-        "uri": "posts/hello-hugo",
-        "content": "Hugo",
-        "objectID": "posts/hello-hugo",
+        "title": "中国经济的症结与未来",
+        "uri": "posts/economy",
+        "content": "30                                                                                                                                                                      50                                                                                                                                                                         30                                                                                                                                                                                                                                                                                                                                                                                                                                                 2025                                                                                                                                                                                                                                                                                                                                                                                                                                                         1                                                                2                                                                                         3                                                                                                                                                                                                                                                                                                                                                                                                                         GDP                                                                                                                                            AI",
+        "objectID": "posts/economy",
         "date": "2024-01-01T00:00:00.000Z",
-        "description": "This is my first post",
+        "description": "",
         "categories": [
             "draft"
         ],
-        "tags": [
-            "Hugo"
-        ],
         "featured": false,
         "draft": false,
-        "comments": true,
-        "images": [
-            "https://ashe.imgix.net/2025-05-14-pic.jpg"
-        ]
+        "comments": true
     },
     {
         "title": "基于docker构建Redis Cluster",

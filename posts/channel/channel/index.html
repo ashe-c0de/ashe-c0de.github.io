@@ -92,7 +92,7 @@ Think of goroutines as the &ldquo;workers&rdquo; and channels as the &ldquo;comm
 </span></span></span><span class=line><span class=cl><span class=w>    </span><span class=c1>// consumer goroutine | main goroutine</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>    </span><span class=nx>msg</span><span class=w> </span><span class=o>:=</span><span class=w> </span><span class=o>&lt;-</span><span class=nx>messages</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>    </span><span class=nx>fmt</span><span class=p>.</span><span class=nf>Println</span><span class=p>(</span><span class=nx>msg</span><span class=p>)</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=p>}</span><span class=w>
 </span></span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
 </span><span class=lnt>2
 </span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>$ go run channels.go 
@@ -157,17 +157,17 @@ Buffered channels are created by specifying a buffer size. The key feature of bu
 </span></span></span><span class=line><span class=cl><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>	</span><span class=c1>// delay for two goroutines to complete</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>	</span><span class=nx>time</span><span class=p>.</span><span class=nf>Sleep</span><span class=p>(</span><span class=mi>6</span><span class=w> </span><span class=o>*</span><span class=w> </span><span class=nx>time</span><span class=p>.</span><span class=nx>Second</span><span class=p>)</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=p>}</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=kd>func</span><span class=w> </span><span class=nf>sender</span><span class=p>(</span><span class=nx>ch</span><span class=w> </span><span class=kd>chan</span><span class=o>&lt;-</span><span class=w> </span><span class=kt>int</span><span class=p>,</span><span class=w> </span><span class=nx>start</span><span class=w> </span><span class=nx>time</span><span class=p>.</span><span class=nx>Time</span><span class=p>)</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=kd>func</span><span class=w> </span><span class=nf>sender</span><span class=p>(</span><span class=nx>ch</span><span class=w> </span><span class=kd>chan</span><span class=o>&lt;-</span><span class=w> </span><span class=kt>int</span><span class=p>,</span><span class=w> </span><span class=nx>start</span><span class=w> </span><span class=nx>time</span><span class=p>.</span><span class=nx>Time</span><span class=p>)</span><span class=w> </span><span class=p>{</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>	</span><span class=k>for</span><span class=w> </span><span class=nx>i</span><span class=w> </span><span class=o>:=</span><span class=w> </span><span class=mi>1</span><span class=p>;</span><span class=w> </span><span class=nx>i</span><span class=w> </span><span class=o>&lt;=</span><span class=w> </span><span class=mi>3</span><span class=p>;</span><span class=w> </span><span class=nx>i</span><span class=o>++</span><span class=w> </span><span class=p>{</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>		</span><span class=nx>fmt</span><span class=p>.</span><span class=nf>Printf</span><span class=p>(</span><span class=s>&#34;Sending %d at %s\n&#34;</span><span class=p>,</span><span class=w> </span><span class=nx>i</span><span class=p>,</span><span class=w> </span><span class=nx>time</span><span class=p>.</span><span class=nf>Since</span><span class=p>(</span><span class=nx>start</span><span class=p>))</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>		</span><span class=nx>ch</span><span class=w> </span><span class=o>&lt;-</span><span class=w> </span><span class=nx>i</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>		</span><span class=nx>fmt</span><span class=p>.</span><span class=nf>Printf</span><span class=p>(</span><span class=s>&#34;Sent %d at %s\n&#34;</span><span class=p>,</span><span class=w> </span><span class=nx>i</span><span class=p>,</span><span class=w> </span><span class=nx>time</span><span class=p>.</span><span class=nf>Since</span><span class=p>(</span><span class=nx>start</span><span class=p>))</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>	</span><span class=p>}</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=p>}</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=kd>func</span><span class=w> </span><span class=nf>receiver</span><span class=p>(</span><span class=nx>ch</span><span class=w> </span><span class=o>&lt;-</span><span class=kd>chan</span><span class=w> </span><span class=kt>int</span><span class=p>,</span><span class=w> </span><span class=nx>start</span><span class=w> </span><span class=nx>time</span><span class=p>.</span><span class=nx>Time</span><span class=p>)</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=kd>func</span><span class=w> </span><span class=nf>receiver</span><span class=p>(</span><span class=nx>ch</span><span class=w> </span><span class=o>&lt;-</span><span class=kd>chan</span><span class=w> </span><span class=kt>int</span><span class=p>,</span><span class=w> </span><span class=nx>start</span><span class=w> </span><span class=nx>time</span><span class=p>.</span><span class=nx>Time</span><span class=p>)</span><span class=w> </span><span class=p>{</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>	</span><span class=c1>// delay start to demonstrate buffer filling up</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>	</span><span class=nx>time</span><span class=p>.</span><span class=nf>Sleep</span><span class=p>(</span><span class=mi>2</span><span class=w> </span><span class=o>*</span><span class=w> </span><span class=nx>time</span><span class=p>.</span><span class=nx>Second</span><span class=p>)</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>
@@ -178,9 +178,9 @@ Buffered channels are created by specifying a buffer size. The key feature of bu
 </span></span></span><span class=line><span class=cl><span class=w>		</span><span class=c1>// sleep to simulate slow receiver</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>		</span><span class=nx>time</span><span class=p>.</span><span class=nf>Sleep</span><span class=p>(</span><span class=mi>1000</span><span class=w> </span><span class=o>*</span><span class=w> </span><span class=nx>time</span><span class=p>.</span><span class=nx>Millisecond</span><span class=p>)</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>	</span><span class=p>}</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=p>}</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=cm>/*
+</span></span></span><span class=line><span class=cl><span class=cm>/*
 </span></span></span><span class=line><span class=cl><span class=cm>Output:
 </span></span></span><span class=line><span class=cl><span class=cm>Sending 1 at 0s
 </span></span></span><span class=line><span class=cl><span class=cm>Sent 1 at 0s
@@ -211,9 +211,9 @@ Buffered channels are created by specifying a buffer size. The key feature of bu
 </span></span></span><span class=line><span class=cl><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>    </span><span class=nx>fmt</span><span class=p>.</span><span class=nf>Println</span><span class=p>(</span><span class=s>&#34;Attempting to send to a closed channel...&#34;</span><span class=p>)</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>    </span><span class=nx>ch</span><span class=w> </span><span class=o>&lt;-</span><span class=w> </span><span class=mi>1</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=p>}</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=cm>/*
+</span></span></span><span class=line><span class=cl><span class=cm>/*
 </span></span></span><span class=line><span class=cl><span class=cm>Output:
 </span></span></span><span class=line><span class=cl><span class=cm>Attempting to send to a closed channel...
 </span></span></span><span class=line><span class=cl><span class=cm>panic: send on closed channel
@@ -241,9 +241,9 @@ Buffered channels are created by specifying a buffer size. The key feature of bu
 </span></span></span><span class=line><span class=cl><span class=w>    </span><span class=nx>fmt</span><span class=p>.</span><span class=nf>Println</span><span class=p>(</span><span class=s>&#34;Reading from a closed channel:&#34;</span><span class=p>)</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>    </span><span class=nx>value</span><span class=p>,</span><span class=w> </span><span class=nx>ok</span><span class=w> </span><span class=o>:=</span><span class=w> </span><span class=o>&lt;-</span><span class=nx>ch</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>    </span><span class=nx>fmt</span><span class=p>.</span><span class=nf>Printf</span><span class=p>(</span><span class=s>&#34;Value: %v, Channel open: %v\n&#34;</span><span class=p>,</span><span class=w> </span><span class=nx>value</span><span class=p>,</span><span class=w> </span><span class=nx>ok</span><span class=p>)</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=p>}</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=cm>/*
+</span></span></span><span class=line><span class=cl><span class=cm>/*
 </span></span></span><span class=line><span class=cl><span class=cm>Output:
 </span></span></span><span class=line><span class=cl><span class=cm>Reading from a closed channel:
 </span></span></span><span class=line><span class=cl><span class=cm>Value: 0, Channel open: false

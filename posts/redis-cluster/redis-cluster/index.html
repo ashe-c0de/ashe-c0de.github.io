@@ -246,7 +246,7 @@ user default off
 </span><span class=lnt>43
 </span><span class=lnt>44
 </span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=cp>#!/bin/bash
-</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=nb>echo</span> <span class=s2>&#34;Creating Redis cluster...&#34;</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c1># 启动6个Redis节点</span>
@@ -257,13 +257,13 @@ user default off
 </span></span><span class=line><span class=cl>  <span class=nv>data</span><span class=o>=</span><span class=s2>&#34;/home/w/redis/data/node-</span><span class=nv>$i</span><span class=s2>&#34;</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  docker run -d --name <span class=nv>$container</span> <span class=se>\
-</span></span></span><span class=line><span class=cl><span class=se></span>    -p <span class=nv>$port</span>:6379 -p <span class=k>$((</span>port <span class=o>+</span> <span class=m>10000</span><span class=k>))</span>:16379 <span class=se>\
-</span></span></span><span class=line><span class=cl><span class=se></span>    --net redis-cluster <span class=se>\
-</span></span></span><span class=line><span class=cl><span class=se></span>    -v <span class=nv>$config</span>:/usr/local/etc/redis/redis.conf <span class=se>\
-</span></span></span><span class=line><span class=cl><span class=se></span>    -v <span class=nv>$data</span>:/data <span class=se>\
-</span></span></span><span class=line><span class=cl><span class=se></span>    -e <span class=nv>TZ</span><span class=o>=</span><span class=s2>&#34;Asia/Shanghai&#34;</span> <span class=se>\
-</span></span></span><span class=line><span class=cl><span class=se></span>    --ulimit <span class=nv>nofile</span><span class=o>=</span>100000:100000 <span class=se>\
-</span></span></span><span class=line><span class=cl><span class=se></span>    redis:6.2 redis-server /usr/local/etc/redis/redis.conf
+</span></span></span><span class=line><span class=cl>    -p <span class=nv>$port</span>:6379 -p <span class=k>$((</span>port <span class=o>+</span> <span class=m>10000</span><span class=k>))</span>:16379 <span class=se>\
+</span></span></span><span class=line><span class=cl>    --net redis-cluster <span class=se>\
+</span></span></span><span class=line><span class=cl>    -v <span class=nv>$config</span>:/usr/local/etc/redis/redis.conf <span class=se>\
+</span></span></span><span class=line><span class=cl>    -v <span class=nv>$data</span>:/data <span class=se>\
+</span></span></span><span class=line><span class=cl>    -e <span class=nv>TZ</span><span class=o>=</span><span class=s2>&#34;Asia/Shanghai&#34;</span> <span class=se>\
+</span></span></span><span class=line><span class=cl>    --ulimit <span class=nv>nofile</span><span class=o>=</span>100000:100000 <span class=se>\
+</span></span></span><span class=line><span class=cl>    redis:6.2 redis-server /usr/local/etc/redis/redis.conf
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=c1># 检查容器是否启动成功</span>
 </span></span><span class=line><span class=cl>  <span class=k>if</span> <span class=o>[</span> <span class=nv>$?</span> -ne <span class=m>0</span> <span class=o>]</span><span class=p>;</span> <span class=k>then</span>
@@ -296,7 +296,7 @@ user default off
 </span><span class=lnt>5
 </span><span class=lnt>6
 </span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=cp>#!/bin/bash
-</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c1># 停止redis cluster</span>
 </span></span><span class=line><span class=cl><span class=k>for</span> i in <span class=o>{</span>1..6<span class=o>}</span><span class=p>;</span> <span class=k>do</span>
 </span></span><span class=line><span class=cl>  docker stop redis-node-<span class=nv>$i</span>
@@ -307,7 +307,7 @@ user default off
 </span><span class=lnt>4
 </span><span class=lnt>5
 </span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=cp>#!/bin/bash
-</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=k>for</span> i in <span class=o>{</span>1..6<span class=o>}</span><span class=p>;</span> <span class=k>do</span>
 </span></span><span class=line><span class=cl>  docker rm redis-node-<span class=nv>$i</span>
 </span></span><span class=line><span class=cl><span class=k>done</span>
@@ -317,7 +317,7 @@ user default off
 </span><span class=lnt>4
 </span><span class=lnt>5
 </span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=cp>#!/bin/bash
-</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=k>for</span> i in <span class=o>{</span>1..6<span class=o>}</span><span class=p>;</span> <span class=k>do</span>
 </span></span><span class=line><span class=cl>  docker start redis-node-<span class=nv>$i</span>
 </span></span><span class=line><span class=cl><span class=k>done</span>
@@ -327,7 +327,7 @@ user default off
 <img alt=我的图片 loading=lazy src=../2835536-20250328194856799-1527369004.png></p><p>后记：不得不说Redis Cluster集群还是很消耗CPU和带宽资源的，因为我的服务器是自己的旧笔记本搭建，启动后系统的CPU和网络资源负载很大（怪不得Redis应用一般独占一台服务器资源）
 <img alt=我的图片 loading=lazy src=../2835536-20250328195050292-2092932283.png>
 <img alt=我的图片 loading=lazy src=../2835536-20250328195137624-1727875628.png></p></div><footer class=post-footer><ul class=post-tags><li><a href=https://ashe-c0de.github.io/tags/redis/>Redis</a></li></ul><nav class=paginav><a class=prev href=https://ashe-c0de.github.io/posts/workflow/workflow/><span class=title>« Prev</span><br><span>什么是工作流</span>
-</a><a class=next href=https://ashe-c0de.github.io/posts/hello-hugo/><span class=title>Next »</span><br><span>Hello Hugo</span></a></nav></footer><script src=https://giscus.app/client.js data-repo=ashe-c0de/blog-comments data-repo-id=R_kgDOOjmdew data-category=General data-category-id=DIC_kwDOOjmde84Cptp7 data-mapping=pathname data-strict=0 data-reactions-enabled=1 data-emit-metadata=0 data-input-position=bottom data-theme=preferred_color_scheme data-lang=en crossorigin=anonymous async></script></article></main><footer class=footer><span>&copy; 2025 <a href=https://ashe-c0de.github.io/>Ashe's Blog</a></span> ·
+</a><a class=next href=https://ashe-c0de.github.io/posts/economy/><span class=title>Next »</span><br><span>中国经济的症结与未来</span></a></nav></footer><script src=https://giscus.app/client.js data-repo=ashe-c0de/blog-comments data-repo-id=R_kgDOOjmdew data-category=General data-category-id=DIC_kwDOOjmde84Cptp7 data-mapping=pathname data-strict=0 data-reactions-enabled=1 data-emit-metadata=0 data-input-position=bottom data-theme=preferred_color_scheme data-lang=en crossorigin=anonymous async></script></article></main><footer class=footer><span>&copy; 2025 <a href=https://ashe-c0de.github.io/>Ashe's Blog</a></span> ·
 <span>Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
 <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentColor"><path d="M12 6H0l6-6z"/></svg>

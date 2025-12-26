@@ -209,10 +209,9 @@
         "comments": true
     },
     {
-        "layout": "search",
+        "placeholder": "Search into blogs, Power by Algolia",
         "uri": "search",
-        "content": "Use precise PaperMod selector chain     searchbox   padding right  85px  important     Using relative path ensure works subdirectories    background image  url        images algolia svg    important  background repeat  no repeat  important  background position  right 15px center  important  background size  65px  important       relative path fails  try absolute root path     supports not  background image  url        images algolia svg       searchbox   background image  url   images algolia svg    important",
-        "objectID": "search",
-        "placeholder": "Search into blogs, by Algolia"
+        "content": "",
+        "objectID": "search"
     }
 ]

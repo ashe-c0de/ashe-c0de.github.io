@@ -21,7 +21,7 @@
     {
         "title": " 一屋不扫，何以扫天下？",
         "uri": "posts/2025-05-31-sweep",
-        "content": "result    progress                      ambition                                                                                                                   ta                                            ta                                                                                                                                          president                                                                                                                                                                                 progress       result                                                                         point                  KISS Keep Simple  Stupid                                  MVP Minimum Viable Product",
+        "content": "result    progress                      ambition                                                                                                                   ta                                            ta                                                                                                                                          president                                                                                                                                                                                 progress       result                                                                         point              KISS Keep Simple  Stupid                              MVP Minimum Viable Product",
         "objectID": "posts/2025-05-31-sweep",
         "date": "2025-05-31T00:00:00.000Z",
         "description": "",
@@ -37,6 +37,19 @@
         "content": "",
         "objectID": "posts/2025-06-16-The hymn of humanity is the hymn of courage",
         "date": "2025-06-16T00:00:00.000Z",
+        "description": "",
+        "categories": [
+            "diary"
+        ],
+        "featured": false,
+        "comments": true
+    },
+    {
+        "title": "不安",
+        "uri": "posts/2025-11-1-fear",
+        "content": "A                                      C                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        vs                                                                                                                                                                                                                                                                                              A                                                       C                                                                               1     vs                                                                                                                                                             2                                                                                                                              3                                                                                                           4                                                       jump scare                                                   5                                                                                                                    6                                    catharsis                                                        7                                                            trigger warning                                                                                                                                                                                                                                                                                                                     vs                                                                                                                               A                                                                                                                  C                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 sensation seeking                                                                                                                                                                                                         A                                                                                                                                                                                                                C                                                                                    1                                                                                                                                                                                                                                       edge safety                                2                                                                                                                                                                                    3                                                                                                                                                                                                                                                                                                                                                      A                                                                                 C                                              sensation seekers                                                                                                                                                                                                                                ",
+        "objectID": "posts/2025-11-1-fear",
+        "date": "2025-11-01T00:00:00.000Z",
         "description": "",
         "categories": [
             "diary"
@@ -84,19 +97,6 @@
         "comments": true
     },
     {
-        "title": "The shortcut of duolingo",
-        "uri": "posts/2025-12-03-duolingo-shortcut",
-        "content": "action   windows   mac                   replay   CTRL   SPACE   COMMAND   SPACE     skip   TAB   TAB     submit   ENTER   ENTER",
-        "objectID": "posts/2025-12-03-duolingo-shortcut",
-        "date": "2025-12-03T00:00:00.000Z",
-        "description": "",
-        "tags": [
-            "other"
-        ],
-        "featured": false,
-        "comments": true
-    },
-    {
         "title": "时代隔阂",
         "uri": "posts/2025-12-12-barrier",
         "content": "Hippies                Sapeurs",
@@ -121,19 +121,6 @@
         ],
         "featured": false,
         "draft": false,
-        "comments": true
-    },
-    {
-        "title": "不安",
-        "uri": "posts/2025/2025-11-1-fear",
-        "content": "A                                      C                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        vs                                                                                                                                                                                                                                                                                              A                                                       C                                                                               1     vs                                                                                                                                                             2                                                                                                                              3                                                                                                           4                                                       jump scare                                                   5                                                                                                                    6                                    catharsis                                                        7                                                            trigger warning                                                                                                                                                                                                                                                                                                                     vs                                                                                                                               A                                                                                                                  C                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 sensation seeking                                                                                                                                                                                                         A                                                                                                                                                                                                                C                                                                                    1                                                                                                                                                                                                                                       edge safety                                2                                                                                                                                                                                    3                                                                                                                                                                                                                                                                                                                                                      A                                                                                 C                                              sensation seekers                                                                                                                                                                                                                                ",
-        "objectID": "posts/2025/2025-11-1-fear",
-        "date": "2025-11-01T00:00:00.000Z",
-        "description": "",
-        "categories": [
-            "diary"
-        ],
-        "featured": false,
         "comments": true
     },
     {
@@ -164,19 +151,6 @@
         "comments": true
     },
     {
-        "title": "Channels in Go",
-        "uri": "posts/channel/channel",
-        "content": "1  Core Concept Channels pipes connect concurrent goroutines  channel technique allows let one goroutine send data goroutine   Golang func main     messages    make chan string     producer goroutine go func     messages",
-        "objectID": "posts/channel/channel",
-        "date": "2025-04-30T00:00:00.000Z",
-        "categories": [
-            "program"
-        ],
-        "featured": false,
-        "draft": false,
-        "comments": true
-    },
-    {
         "title": "中国经济的症结与未来",
         "uri": "posts/economy",
         "content": "30                                                                                                                                                                      50                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     2025                                                                                                                                                                                                                                                                                                                                                                                                                                                   1                                                                2                                                                                         3                                                                                                                                                                                                                                                                                                                                                                                                                         GDP                                                                                                                                            AI                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ing                                                                                                                                                                                               996",
@@ -191,45 +165,13 @@
         "comments": true
     },
     {
-        "title": "基于docker构建Redis Cluster",
-        "uri": "posts/redis-cluster/redis-cluster",
-        "content": "1     Redis             Redis 6 2                     bash docker pull redis 6 2   2                     home w              bash mkdir redis_cluster cd redis_cluster mkdir bin mkdir conf mkdir data cd data mkdir node 1 mkdir node 2 mkdir node 3 mkdir node 5 mkdir node 6   conf        vim redis node 1 conf    6   redis node 1 conf redis node 2 conf redis node 3 conf redis node 4 conf redis node 5 conf redis node 6 conf  bash bind 0 0 0 0 protected mode no cluster enabled yes cluster config file nodes 7000 conf cluster node timeout 5000 cluster announce ip 192 168 1 6 cluster announce port 7000 cluster announce bus port 17000 user r_user  read123      read      write      admin user rw_user  write123      read      write      admin user admin  admin123         all user default off   3              vim init_redis sh  bash    bin bash echo  Creating Redis cluster       6 Redis    1  6   port    6999    i   container  redis node  i  config   home w redis conf redis node  i conf  data   home w redis data node  i  docker run  d   name  container    p  port 6379  p    port   10000   16379     net redis cluster    v  config  usr local etc redis redis conf    v  data  data    e TZ  Asia Shanghai      ulimit nofile 100000 100000   redis 6 2 redis server  usr local etc redis redis conf                  ne 0    echo  Failed start  container  exit 1 fi done        sleep 10         IP      IP nodes     1  6   ip   docker inspect  f    range NetworkSettings Networks     IPAddress    end    redis node  i  nodes    ip 6379   done echo  Nodes   nodes     Redis            docker exec  it redis node 1 redis cli  u redis   admin admin123 localhost 6379   cluster create  nodes   cluster replicas 1 echo  All Redis nodes running now  list running containers   docker ps   grep redis          vim stop_redis sh  bash    bin bash   redis cluster  1  6   docker stop redis node  i done            vim rm_redis sh  bash    bin bash  1  6   docker rm redis node  i done            vim start_redis sh  bash    bin bash  1  6   docker start redis node  i done            docker exec  it redis node 1 redis cli CLUSTER INFO      docker exec  it redis node 1 redis cli  u redis   admin admin123 localhost 6379 CLUSTER INFO          docker exec  it redis node 1 redis cli CLUSTER NODES docker exec  it redis node 1 redis cli  u redis   admin admin123 localhost 6379 CLUSTER NODES                    Redis Cluster       CPU                               CPU             Redis",
-        "objectID": "posts/redis-cluster/redis-cluster",
-        "date": "2024-04-28T00:00:00.000Z",
-        "categories": [
-            "Microservices"
-        ],
-        "tags": [
-            "redis"
-        ],
-        "featured": false,
-        "draft": false,
-        "showToc": true,
-        "tocOpen": true,
-        "layout": "sidebar",
-        "comments": true
-    },
-    {
         "title": "《阿尔弗雷德·普鲁弗洛克的情歌》节选",
-        "uri": "posts/test",
+        "uri": "posts/the-love-song",
         "content": "Let us go then  I  When evening spread against sky patient etherized upon table  Let us go  certain half deserted streets  muttering retreats restless nights one night cheap hotels sawdust restaurants oyster shells  Streets follow tedious argument insidious intent lead overwhelming question   Oh  not ask   What it   Let us go visit  room women go Talking Michelangelo  yellow fog rubs its back upon window panes  yellow smoke rubs its muzzle window panes  Licked its tongue corners evening  Lingered upon pools stand drains  Let fall upon its back soot falls chimneys  Slipped terrace  made sudden leap  seeing soft October night  Curled once house  fell asleep  indeed will time yellow smoke slides along street  Rubbing its back upon window panes  will time  will time prepare face meet faces meet  will time murder create  time works days hands lift drop question plate  Time time me  time yet hundred indecisions  hundred visions revisions  taking toast tea  room women go Talking Michelangelo       T  S  Eliot",
-        "objectID": "posts/test",
+        "objectID": "posts/the-love-song",
         "date": "2025-04-29T00:00:00.000Z",
         "categories": [
             "draft"
-        ],
-        "featured": false,
-        "draft": false,
-        "comments": true
-    },
-    {
-        "title": "什么是工作流",
-        "uri": "posts/workflow/workflow",
-        "content": "1                                                                              2              Divide Conquer                      Orchestration                                                                                                                                                                                3                                                                                                                                                                                                                                                                                 4",
-        "objectID": "posts/workflow/workflow",
-        "date": "2024-04-29T00:00:00.000Z",
-        "categories": [
-            "Microservices"
         ],
         "featured": false,
         "draft": false,

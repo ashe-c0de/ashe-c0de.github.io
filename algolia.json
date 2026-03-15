@@ -1,11 +1,5 @@
 [
     {
-        "layout": "page",
-        "uri": "about",
-        "content": "Ashe",
-        "objectID": "about"
-    },
-    {
         "title": "Posts",
         "uri": "posts",
         "content": "",

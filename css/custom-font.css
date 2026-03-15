@@ -7,6 +7,6 @@
 
 /* Optional: apply the font globally */
 body {
-  font-family: 'MyCustomFont', sans-serif;
+  font-family: 'MyCustomFont', sans-serif !important;
 }
 

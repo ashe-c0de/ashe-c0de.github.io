@@ -1,0 +1,22 @@
+body {
+    background-color: #f4f1ea; /* 羊皮纸色 */
+    color: #333;
+    font-family: 'Georgia', serif;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+header { border-bottom: 1px dashed #dcd7c9; margin-bottom: 40px; }
+h1, h2, h3 { color: #5d4037; }
+a { color: #8b4513; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* 文章列表样式 */
+.post-list { list-style: none; padding: 0; }
+.post-item { margin-bottom: 20px; display: flex; justify-content: space-between; }
+.post-date { color: #999; font-family: monospace; }
+
+/* 内容区域沉浸感 */
+article { text-align: justify; }

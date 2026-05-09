@@ -1,22 +1,174 @@
-body {
-    background-color: #f4f1ea; /* 羊皮纸色 */
-    color: #333;
-    font-family: 'Georgia', serif;
-    line-height: 1.8;
-    max-width: 700px;
-    margin: 40px auto;
-    padding: 0 20px;
+/* =========================
+   Global Reset
+========================= */
+
+*, *::before, *::after {
+    box-sizing: border-box;
 }
 
-header { border-bottom: 1px dashed #dcd7c9; margin-bottom: 40px; }
-h1, h2, h3 { color: #5d4037; }
-a { color: #8b4513; text-decoration: none; }
-a:hover { text-decoration: underline; }
+/* =========================
+   Base Layout
+========================= */
 
-/* 文章列表样式 */
-.post-list { list-style: none; padding: 0; }
-.post-item { margin-bottom: 20px; display: flex; justify-content: space-between; }
-.post-date { color: #999; font-family: monospace; }
+body {
+    background-color: #f4f1ea;
+    color: #333;
+    font-family: 'Georgia', 'Times New Roman', serif;
 
-/* 内容区域沉浸感 */
-article { text-align: justify; }
+    line-height: 1.8;
+    max-width: 700px;
+
+    margin: 40px auto;
+    padding: 0 20px;
+
+    overflow-wrap: break-word;
+}
+
+/* =========================
+   Typography
+========================= */
+
+h1, h2, h3 {
+    color: #5d4037;
+    font-weight: normal;
+}
+
+p {
+    margin: 1.2rem 0;
+}
+
+/* =========================
+   Header
+========================= */
+
+header {
+    border-bottom: 1px dashed #dcd7c9;
+
+    margin-bottom: 2.5rem;
+    padding-bottom: 0.5rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+/* =========================
+   Links
+========================= */
+
+a {
+    color: #8b4513;
+    text-decoration: none;
+
+    transition: opacity 0.2s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    opacity: 0.85;
+}
+
+/* =========================
+   Post List
+========================= */
+
+.post-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.post-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+.post-item a {
+    flex: 1;
+}
+
+.post-date {
+    color: #777;
+
+    font-size: 0.9rem;
+
+    font-family:
+        ui-monospace,
+        SFMono-Regular,
+        Menlo,
+        Consolas,
+        monospace;
+
+    white-space: nowrap;
+}
+
+/* =========================
+   Article
+========================= */
+
+article {
+    text-align: left;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* =========================
+   Code Block
+========================= */
+
+pre, code {
+    font-family:
+        ui-monospace,
+        SFMono-Regular,
+        Menlo,
+        Consolas,
+        monospace;
+}
+
+/* =========================
+   Text Selection
+========================= */
+
+::selection {
+    background: #d7c4a3;
+}
+
+/* =========================
+   Mobile Responsive
+========================= */
+
+@media (max-width: 768px) {
+
+    body {
+        margin: 1rem auto;
+        padding: 1rem;
+
+        font-size: 16px;
+        line-height: 1.75;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    .post-item {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 0.25rem;
+        margin-bottom: 1rem;
+    }
+
+    .post-date {
+        font-size: 0.82rem;
+        opacity: 0.7;
+    }
+}

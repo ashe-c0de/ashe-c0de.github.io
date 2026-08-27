@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-Allow: /
-Sitemap: https://ashe-c0de.github.io/en/sitemap.xml

@@ -226,6 +226,31 @@ hr {
 }
 
 /* =========================
+   Article Meta
+========================= */
+
+.article-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edit-link {
+    color: #777;
+    display: flex;
+    align-items: center;
+}
+
+.edit-link:hover {
+    color: #8b4513;
+}
+
+.edit-link svg {
+    width: 14px;
+    height: 14px;
+}
+
+/* =========================
    Footer
 ========================= */
 

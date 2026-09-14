@@ -81,6 +81,21 @@ header h1 {
     font-size: 1.8rem;
 }
 
+.github-link {
+    display: flex;
+    align-items: center;
+    color: #777;
+}
+
+.github-link:hover {
+    color: #8b4513;
+}
+
+.github-link svg {
+    width: 20px;
+    height: 20px;
+}
+
 /* =========================
    Links
 ========================= */
@@ -261,8 +276,30 @@ footer {
     padding-bottom: 0.6rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     color: #777;
     font-size: 0.88rem;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.github-link {
+    display: flex;
+    align-items: center;
+    color: #777;
+}
+
+.github-link:hover {
+    color: #8b4513;
+}
+
+.github-link svg {
+    width: 16px;
+    height: 16px;
 }
 
 .footer-links a {

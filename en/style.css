@@ -281,25 +281,13 @@ footer {
     font-size: 0.88rem;
 }
 
-.footer-left {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.github-link {
-    display: flex;
-    align-items: center;
+.footer-left a {
     color: #777;
+    text-decoration: none;
 }
 
-.github-link:hover {
+.footer-left a:hover {
     color: #8b4513;
-}
-
-.github-link svg {
-    width: 16px;
-    height: 16px;
 }
 
 .footer-links a {

@@ -135,6 +135,27 @@ a:hover {
     flex: 1;
 }
 
+.post-title {
+    display: flex;
+    align-items: baseline;
+    flex: 1;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    min-width: 0;
+}
+
+.post-marker {
+    width: 0.85em;
+    height: 0.85em;
+    flex: 0 0 auto;
+    color: #8b4513;
+}
+
+.post-pin {
+    width: 1em;
+    height: 1em;
+}
+
 .post-date {
     color: #777;
 
